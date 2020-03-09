@@ -1,0 +1,34 @@
+.description__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px; }
+
+.description__main > p:first-child {
+  margin-top: 10px;
+  color: #687c94; }
+
+.description__parameters {
+  margin-top: 10px; }
+  .description__parameters span {
+    margin-right: 35px; }
+
+.description__apartment {
+  margin-top: 30px;
+  line-height: 24px; }
+
+.description__btn {
+  margin-top: 20px; }
+
+.description__amenities > h2 {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px; }
+
+.description__amenities > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=description.css.map */

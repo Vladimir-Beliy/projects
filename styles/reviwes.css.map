@@ -1,0 +1,1 @@
+{"version":3,"sources":["reviwes.scss"],"names":[],"mappings":"AAEE;EACE,eAAe;EACf,iBAAiB;EACjB,gBAAgB,EAAA;;AAGlB;EACE,gBAAgB,EAAA","file":"reviwes.css","sourcesContent":[".reviews {\n\n  &__title {\n    font-size: 28px;\n    line-height: 33px;\n    font-weight: 500;\n  }\n  \n  &__wrap {\n    margin-top: 34px;\n  }\n}\n"]}
