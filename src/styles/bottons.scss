@@ -1,0 +1,59 @@
+@import "variables";
+
+.btn {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link;
+  }
+}
+
+.btn--red {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #0000;
+  background: #fd5c63;
+  border-radius: 4px;
+  color: white;
+  transition: background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+
+  &:hover {
+    background: white;
+    border-color: #fd5c63;
+    color: #fd5c63;
+  }
+}
+
+.btn--blue {
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid $color-link;
+  background: white;
+  border-radius: 4px;
+  color: $color-link;
+  transition: background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+
+  &:hover {
+    background: $color-link;
+    border-color: #0000;
+    color: white;
+  }
+}

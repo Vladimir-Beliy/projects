@@ -1,0 +1,44 @@
+.description {
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__main > p:first-child {
+    margin-top: 10px;
+    color: #687c94;
+  }
+
+  &__parameters {
+    margin-top: 10px;
+
+    span {
+      margin-right: 35px;
+    }
+  }
+
+  &__apartment {
+    margin-top: 30px;
+    line-height: 24px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__amenities > h2 {
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__amenities > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    margin-top: 20px;
+  }
+}
