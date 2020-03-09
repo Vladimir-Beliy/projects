@@ -1,0 +1,21 @@
+.hosted {
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &__location {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  &__comment {
+    margin-top: 15px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+}
