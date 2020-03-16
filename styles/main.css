@@ -20,6 +20,7 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
+  outline-color: #fd5c63;
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -37,11 +38,14 @@
   background: #fd5c63;
   border-radius: 4px;
   color: white;
-  transition: background 0.2s, border-color 0.2s, color 0.2s; }
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  outline: none; }
   .btn--red:hover {
     background: white;
     border-color: #fd5c63;
     color: #fd5c63; }
+  .btn--red:focus {
+    box-shadow: 0 0 15px #fd5c63; }
 
 .btn--blue {
   width: 150px;
@@ -51,22 +55,24 @@
   background: white;
   border-radius: 4px;
   color: #118488;
-  transition: background 0.2s, border-color 0.2s, color 0.2s; }
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  outline: none; }
   .btn--blue:hover {
     background: #118488;
     border-color: #0000;
     color: white; }
+  .btn--blue:focus {
+    box-shadow: 0 0 7px #118488; }
 
 .header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 2000px;
-  min-width: 300px;
   padding: 0 26px 0 19px;
   margin: 0 auto;
-  height: 35px; }
+  max-width: 2000px;
+  height: 60px; }
 
 .header__logo-link {
   display: block;
@@ -88,15 +94,17 @@
 
 .header__toggler-label {
   display: block;
+  margin-right: 15px;
+  height: 25px;
+  width: 35px;
+  cursor: pointer;
   text-align: center;
-  line-height: 30px;
-  height: 30px;
-  width: 30px; }
+  line-height: 25px; }
 
 .header__nav-list {
   position: absolute;
   right: -56px;
-  bottom: -96px;
+  top: 43px;
   background-color: white;
   border: 1px solid #3d4e61; }
 
@@ -126,8 +134,6 @@
   background-size: cover; }
 
 @media (min-width: 500px) {
-  .header__main {
-    height: 60px; }
   .header__toggler-label {
     display: none; }
   .header__nav-list {
@@ -145,14 +151,15 @@
   font-size: 36px;
   line-height: 42px; }
 
-.description__main > p:first-child {
+.description__paragraph:first-child {
   margin-top: 10px;
   color: #687c94; }
 
 .description__parameters {
   margin-top: 10px; }
-  .description__parameters span {
-    margin-right: 35px; }
+
+.description__span {
+  margin-right: 35px; }
 
 .description__apartment {
   margin-top: 30px;
@@ -161,13 +168,13 @@
 .description__btn {
   margin-top: 20px; }
 
-.description__amenities > h2 {
+.description__amenities-title {
   margin-top: 45px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px; }
 
-.description__amenities > ul {
+.description__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
@@ -218,7 +225,7 @@
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px; }
-  .card-book input {
+  .card-book__input {
     box-sizing: border-box;
     padding: 0 17px;
     width: 100%;
@@ -231,21 +238,21 @@
     font-size: 16px;
     line-height: 19px;
     color: inherit; }
-    .card-book input::-webkit-input-placeholder {
+    .card-book__input::-webkit-input-placeholder {
       color: inherit; }
-    .card-book input::-moz-placeholder {
+    .card-book__input::-moz-placeholder {
       color: inherit; }
-    .card-book input:-ms-input-placeholder {
+    .card-book__input:-ms-input-placeholder {
       color: inherit; }
-    .card-book input::-ms-input-placeholder {
+    .card-book__input::-ms-input-placeholder {
       color: inherit; }
-    .card-book input::placeholder {
+    .card-book__input::placeholder {
       color: inherit; }
-    .card-book input:hover {
-      box-shadow: 0 0 2px #118488; }
-  .card-book__date {
+    .card-book__input:focus, .card-book__input:hover {
+      box-shadow: 0 0 7px #fd5c63; }
+  .card-book__input:first-of-type {
     margin-top: 39px; }
-  .card-book__guests {
+  .card-book__input:last-of-type {
     margin-top: 16px; }
   .card-book__btn {
     margin-top: 24px; }
@@ -286,25 +293,28 @@
   .footer__item {
     margin-top: 20px; }
 
-html,
+html {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+  scroll-behavior: smooth; }
+
 body,
 h1,
 h2,
 h3,
 p,
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  font-family: "Avenir", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #3d4e61; }
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  outline-color: #fd5c63; }
   a:hover {
     color: #118488; }
 

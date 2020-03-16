@@ -5,7 +5,7 @@
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px; }
-  .card-book input {
+  .card-book__input {
     box-sizing: border-box;
     padding: 0 17px;
     width: 100%;
@@ -18,21 +18,21 @@
     font-size: 16px;
     line-height: 19px;
     color: inherit; }
-    .card-book input::-webkit-input-placeholder {
+    .card-book__input::-webkit-input-placeholder {
       color: inherit; }
-    .card-book input::-moz-placeholder {
+    .card-book__input::-moz-placeholder {
       color: inherit; }
-    .card-book input:-ms-input-placeholder {
+    .card-book__input:-ms-input-placeholder {
       color: inherit; }
-    .card-book input::-ms-input-placeholder {
+    .card-book__input::-ms-input-placeholder {
       color: inherit; }
-    .card-book input::placeholder {
+    .card-book__input::placeholder {
       color: inherit; }
-    .card-book input:hover {
-      box-shadow: 0 0 2px #118488; }
-  .card-book__date {
+    .card-book__input:focus, .card-book__input:hover {
+      box-shadow: 0 0 7px #fd5c63; }
+  .card-book__input:first-of-type {
     margin-top: 39px; }
-  .card-book__guests {
+  .card-book__input:last-of-type {
     margin-top: 16px; }
   .card-book__btn {
     margin-top: 24px; }

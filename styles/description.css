@@ -3,14 +3,15 @@
   font-size: 36px;
   line-height: 42px; }
 
-.description__main > p:first-child {
+.description__paragraph:first-child {
   margin-top: 10px;
   color: #687c94; }
 
 .description__parameters {
   margin-top: 10px; }
-  .description__parameters span {
-    margin-right: 35px; }
+
+.description__span {
+  margin-right: 35px; }
 
 .description__apartment {
   margin-top: 30px;
@@ -19,13 +20,13 @@
 .description__btn {
   margin-top: 20px; }
 
-.description__amenities > h2 {
+.description__amenities-title {
   margin-top: 45px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px; }
 
-.description__amenities > ul {
+.description__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;

@@ -5,6 +5,7 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
+  outline-color: #fd5c63;
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -22,11 +23,14 @@
   background: #fd5c63;
   border-radius: 4px;
   color: white;
-  transition: background 0.2s, border-color 0.2s, color 0.2s; }
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  outline: none; }
   .btn--red:hover {
     background: white;
     border-color: #fd5c63;
     color: #fd5c63; }
+  .btn--red:focus {
+    box-shadow: 0 0 15px #fd5c63; }
 
 .btn--blue {
   width: 150px;
@@ -36,10 +40,13 @@
   background: white;
   border-radius: 4px;
   color: #118488;
-  transition: background 0.2s, border-color 0.2s, color 0.2s; }
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  outline: none; }
   .btn--blue:hover {
     background: #118488;
     border-color: #0000;
     color: white; }
+  .btn--blue:focus {
+    box-shadow: 0 0 7px #118488; }
 
 /*# sourceMappingURL=bottons.css.map */
