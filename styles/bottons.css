@@ -1,52 +1,42 @@
 .btn {
   display: block;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: inherit;
   border: none;
   cursor: pointer;
   outline-color: #fd5c63;
-  font-family: "Avenir", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: inherit;
-  text-decoration: none; }
+  font-weight: 500; }
   .btn:hover {
     color: #118488; }
 
-.btn--red {
-  width: 100%;
+.btn--big {
   height: 50px;
-  box-sizing: border-box;
-  border: 1px solid #0000;
-  background: #fd5c63;
   border-radius: 4px;
-  color: white;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   outline: none; }
-  .btn--red:hover {
-    background: white;
-    border-color: #fd5c63;
-    color: #fd5c63; }
-  .btn--red:focus {
-    box-shadow: 0 0 15px #fd5c63; }
-
-.btn--blue {
-  width: 150px;
-  height: 50px;
-  box-sizing: border-box;
-  border: 1px solid #118488;
-  background: white;
-  border-radius: 4px;
-  color: #118488;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-  outline: none; }
-  .btn--blue:hover {
-    background: #118488;
-    border-color: #0000;
+  .btn--big--red {
+    width: 100%;
+    border: 1px solid #0000;
+    background: #fd5c63;
     color: white; }
-  .btn--blue:focus {
-    box-shadow: 0 0 7px #118488; }
+    .btn--big--red:hover {
+      background: white;
+      border-color: #fd5c63;
+      color: #fd5c63; }
+    .btn--big--red:focus {
+      box-shadow: 0 0 15px #fd5c63; }
+  .btn--big--blue {
+    width: 150px;
+    border: 1px solid #118488;
+    background: white;
+    color: #118488; }
+    .btn--big--blue:hover {
+      background: #118488;
+      border-color: #0000;
+      color: white; }
+    .btn--big--blue:focus {
+      box-shadow: 0 0 7px #118488; }
 
 /*# sourceMappingURL=bottons.css.map */

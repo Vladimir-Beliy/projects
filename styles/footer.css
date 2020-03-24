@@ -4,16 +4,16 @@
   .footer__main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 490px; }
     @media (min-width: 1120px) {
       .footer__main {
         max-width: 870px; } }
-    @media (max-width: 400px) {
-      .footer__main {
-        flex-direction: column; } }
   .footer__column {
     margin-top: 44px; }
+  .footer__column:not(:last-child) {
+    margin-right: 40px; }
   .footer__title {
     font-weight: 500; }
   .footer__item {
