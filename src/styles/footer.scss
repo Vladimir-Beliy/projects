@@ -1,24 +1,27 @@
+@import "variables";
+
 .footer {
-  border-top: 1px solid #e1e7ed;
+  border-top: 1px solid $color-border;
   padding: 0 15px 44px;
 
   &__main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 490px;
 
-    @media (min-width: 1120px) {
+    @media (min-width: $breakpoint-main) {
       max-width: 870px;
-    }
-
-    @media (max-width: 400px) {
-      flex-direction: column;
     }
   }
 
   &__column {
     margin-top: 44px;
+  }
+
+  &__column:not(:last-child) {
+    margin-right: 40px;
   }
 
   &__title {
