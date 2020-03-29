@@ -174,9 +174,11 @@
   line-height: 23px; }
 
 .description__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.description__list-item {
+  width: 50%;
   margin-top: 20px; }
 
 .reviews__title {
