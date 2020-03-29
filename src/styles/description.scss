@@ -1,0 +1,47 @@
+.description {
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__paragraph:first-child {
+    margin-top: 10px;
+    color: #687c94;
+  }
+
+  &__parameters {
+    margin-top: 10px;
+  }
+
+  &__span {
+    margin-right: 35px;
+  }
+
+  &__apartment {
+    margin-top: 30px;
+    line-height: 24px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__amenities-title {
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    width: 50%;
+    margin-top: 20px;
+  }
+}

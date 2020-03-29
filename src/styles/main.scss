@@ -1,0 +1,83 @@
+@import "fonts";
+@import "variables";
+@import "bottons";
+@import "header";
+@import "description";
+@import "reviwes";
+@import "comments";
+@import "card-book";
+@import "hosted";
+@import "footer";
+
+html {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $main-color;
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline-color: $sub-color;
+
+  &:hover {
+    color: $color-link;
+  }
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  gap: 70px 80px;
+  grid-template-columns: minmax(270px, 490px);
+  margin: 39px 15px 75px;
+}
+
+@media (min-width: $breakpoint-main) {
+
+  .grid-container {
+    grid-template-columns: 490px 330px;
+    grid-template-areas: "mid-one mid-three"
+      "mid-two ."
+      "mid-four .";
+  }
+
+  .description {
+    grid-area: mid-one;
+  }
+
+  .reviews {
+    grid-area: mid-two;
+  }
+
+  .card-book {
+    grid-area: mid-three;
+  }
+
+  .hosted {
+    grid-area: mid-four;
+  }
+}
